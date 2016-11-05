@@ -1,6 +1,11 @@
 {
     ["databars"] = {
         ["artifact"] = {
+            ["orientation"] = "HORIZONTAL",
+            ["height"] = 5,
+            ["width"] = 576,
+        },
+        ["experience"] = {
             ["height"] = 5,
             ["orientation"] = "HORIZONTAL",
             ["width"] = 576,
@@ -9,7 +14,7 @@
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 6,
+    ["currentTutorial"] = 7,
     ["general"] = {
         ["topPanel"] = false,
         ["bottomPanel"] = false,
@@ -27,14 +32,15 @@
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
         ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,191",
-        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,210",
+        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,145",
+        ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
         ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-144,28",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,210",
-        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,51",
-        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-        ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,145",
-        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,145",
+        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,104",
+        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,51",
+        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,210",
     },
     ["actionbar"] = {
         ["bar3"] = {
@@ -76,4 +82,4 @@
         ["font"] = "聊天",
         ["panelBackdrop"] = "LEFT",
     },
-}::profile::Cipherarrow - 天空之牆
+}::profile::Cipherhorn - 天空之牆
