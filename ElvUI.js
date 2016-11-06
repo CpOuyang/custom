@@ -5,19 +5,22 @@
             ["height"] = 5,
             ["width"] = 576,
         },
+        ["experience"] = {
+            ["height"] = 5,
+            ["width"] = 576,
+        },
         ["honor"] = {
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 8,
-    ["sle"] = {
-        ["Armory"] = {
-            ["Inspect"] = {
-                ["Enable"] = false,
-            },
-            ["Character"] = {
-                ["Enable"] = false,
-            },
+    ["currentTutorial"] = 2,
+    ["general"] = {
+        ["topPanel"] = false,
+        ["objectiveFrameHeight"] = 720,
+        ["bottomPanel"] = false,
+        ["minimap"] = {
+            ["locationText"] = "SHOW",
+            ["locationFontSize"] = 14,
         },
     },
     ["movers"] = {
@@ -32,21 +35,28 @@
         ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-65,-264",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
-        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,221",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,240",
         ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,51",
+        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,221",
+        ["ElvAB_2"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-464,4",
+        ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
         ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-144,28",
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,180",
-        ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
-        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-        ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,240",
+        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,104",
+        ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
         ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,180",
     },
-    ["general"] = {
-        ["topPanel"] = false,
-        ["bottomPanel"] = false,
-        ["objectiveFrameHeight"] = 720,
+    ["sle"] = {
+        ["Armory"] = {
+            ["Inspect"] = {
+                ["Enable"] = false,
+            },
+            ["Character"] = {
+                ["Enable"] = false,
+            },
+        },
     },
     ["actionbar"] = {
         ["bar3"] = {
@@ -56,6 +66,12 @@
             ["buttons"] = 12,
         },
         ["fontSize"] = 16,
+        ["bar2"] = {
+            ["enabled"] = true,
+            ["showGrid"] = false,
+            ["buttonsize"] = 48,
+            ["buttons"] = 4,
+        },
         ["bar1"] = {
             ["buttonspacing"] = 0,
             ["buttonsize"] = 48,
@@ -65,19 +81,19 @@
             ["buttons"] = 4,
         },
         ["fontOutline"] = "NONE",
-        ["backdropSpacingConverted"] = true,
+        ["bar4"] = {
+            ["enabled"] = false,
+        },
         ["barPet"] = {
             ["point"] = "TOPLEFT",
             ["buttonsPerRow"] = 10,
-            ["buttonsize"] = 28,
             ["backdrop"] = false,
+            ["buttonsize"] = 28,
         },
         ["microbar"] = {
             ["enabled"] = true,
         },
-        ["bar4"] = {
-            ["enabled"] = false,
-        },
+        ["backdropSpacingConverted"] = true,
     },
     ["unitframe"] = {
         ["fontOutline"] = "NONE",
@@ -89,4 +105,4 @@
         ["panelBackdrop"] = "LEFT",
         ["panelTabBackdrop"] = true,
     },
-}::profile::Cipherarrow - 天空之牆
+}::profile::Cipherhorn - 天空之牆
