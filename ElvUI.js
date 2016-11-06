@@ -1,21 +1,21 @@
 {
     ["databars"] = {
         ["artifact"] = {
-            ["height"] = 5,
             ["orientation"] = "HORIZONTAL",
+            ["height"] = 5,
             ["width"] = 576,
         },
         ["honor"] = {
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 7,
+    ["currentTutorial"] = 8,
     ["sle"] = {
         ["Armory"] = {
-            ["Character"] = {
+            ["Inspect"] = {
                 ["Enable"] = false,
             },
-            ["Inspect"] = {
+            ["Character"] = {
                 ["Enable"] = false,
             },
         },
@@ -33,15 +33,15 @@
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
         ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,221",
-        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,180",
-        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,180",
+        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,240",
+        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,51",
         ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-144,28",
-        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,240",
+        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,180",
+        ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
         ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
-        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,51",
-        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,240",
+        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,240",
+        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,180",
     },
     ["general"] = {
         ["topPanel"] = false,
@@ -65,9 +65,7 @@
             ["buttons"] = 4,
         },
         ["fontOutline"] = "NONE",
-        ["bar4"] = {
-            ["enabled"] = false,
-        },
+        ["backdropSpacingConverted"] = true,
         ["barPet"] = {
             ["point"] = "TOPLEFT",
             ["buttonsPerRow"] = 10,
@@ -77,7 +75,9 @@
         ["microbar"] = {
             ["enabled"] = true,
         },
-        ["backdropSpacingConverted"] = true,
+        ["bar4"] = {
+            ["enabled"] = false,
+        },
     },
     ["unitframe"] = {
         ["fontOutline"] = "NONE",
@@ -87,5 +87,6 @@
         ["timeStampFormat"] = "%H:%M:%S ",
         ["font"] = "聊天",
         ["panelBackdrop"] = "LEFT",
+        ["panelTabBackdrop"] = true,
     },
 }::profile::Cipherarrow - 天空之牆
