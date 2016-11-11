@@ -1,26 +1,28 @@
 {
     ["databars"] = {
         ["artifact"] = {
-            ["orientation"] = "HORIZONTAL",
             ["height"] = 5,
+            ["orientation"] = "HORIZONTAL",
             ["width"] = 576,
         },
         ["experience"] = {
             ["height"] = 5,
+            ["orientation"] = "HORIZONTAL",
             ["width"] = 576,
         },
         ["honor"] = {
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 2,
-    ["general"] = {
-        ["topPanel"] = false,
-        ["objectiveFrameHeight"] = 720,
-        ["bottomPanel"] = false,
-        ["minimap"] = {
-            ["locationText"] = "SHOW",
-            ["locationFontSize"] = 14,
+    ["currentTutorial"] = 5,
+    ["sle"] = {
+        ["Armory"] = {
+            ["Inspect"] = {
+                ["Enable"] = false,
+            },
+            ["Character"] = {
+                ["Enable"] = false,
+            },
         },
     },
     ["movers"] = {
@@ -44,19 +46,9 @@
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,180",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,240",
         ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,104",
+        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,106",
         ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
         ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,180",
-    },
-    ["sle"] = {
-        ["Armory"] = {
-            ["Inspect"] = {
-                ["Enable"] = false,
-            },
-            ["Character"] = {
-                ["Enable"] = false,
-            },
-        },
     },
     ["actionbar"] = {
         ["bar3"] = {
@@ -87,8 +79,8 @@
         ["barPet"] = {
             ["point"] = "TOPLEFT",
             ["buttonsPerRow"] = 10,
-            ["backdrop"] = false,
             ["buttonsize"] = 28,
+            ["backdrop"] = false,
         },
         ["microbar"] = {
             ["enabled"] = true,
@@ -98,6 +90,15 @@
     ["unitframe"] = {
         ["fontOutline"] = "NONE",
         ["fontSize"] = 18,
+    },
+    ["general"] = {
+        ["topPanel"] = false,
+        ["objectiveFrameHeight"] = 720,
+        ["bottomPanel"] = false,
+        ["minimap"] = {
+            ["locationText"] = "SHOW",
+            ["locationFontSize"] = 14,
+        },
     },
     ["chat"] = {
         ["timeStampFormat"] = "%H:%M:%S ",
