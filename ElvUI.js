@@ -1,20 +1,20 @@
 {
     ["databars"] = {
         ["artifact"] = {
-            ["orientation"] = "HORIZONTAL",
             ["height"] = 5,
+            ["orientation"] = "HORIZONTAL",
             ["width"] = 576,
         },
         ["experience"] = {
-            ["orientation"] = "HORIZONTAL",
             ["height"] = 5,
+            ["orientation"] = "HORIZONTAL",
             ["width"] = 576,
         },
         ["honor"] = {
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 9,
+    ["currentTutorial"] = 12,
     ["sle"] = {
         ["Armory"] = {
             ["Character"] = {
@@ -29,22 +29,23 @@
         ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
         ["PetAB"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-118,61",
         ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
-        ["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
+        ["ElvAB_2"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-464,4",
         ["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,343",
         ["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,226",
         ["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-8,28",
         ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,289",
+        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,180",
         ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-65,-264",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
-        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,180",
         ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,100",
+        ["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
         ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,221",
-        ["ElvAB_2"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-464,4",
         ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-        ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-144,28",
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,180",
+        ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-144,28",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,240",
+        ["ElvUI_RMBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-164,107",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
         ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,106",
         ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,51",
@@ -57,8 +58,16 @@
         ["panelTabBackdrop"] = true,
     },
     ["unitframe"] = {
-        ["fontOutline"] = "NONE",
         ["fontSize"] = 18,
+        ["units"] = {
+            ["target"] = {
+                ["height"] = 64,
+            },
+            ["player"] = {
+                ["height"] = 64,
+            },
+        },
+        ["fontOutline"] = "NONE",
     },
     ["actionbar"] = {
         ["bar3"] = {
@@ -83,19 +92,23 @@
             ["buttons"] = 4,
         },
         ["backdropSpacingConverted"] = true,
-        ["fontOutline"] = "NONE",
-        ["macrotext"] = true,
         ["barPet"] = {
             ["point"] = "TOPLEFT",
             ["buttonsPerRow"] = 10,
             ["buttonsize"] = 28,
             ["backdrop"] = false,
         },
+        ["fontOutline"] = "NONE",
+        ["macrotext"] = true,
+        ["bar4"] = {
+            ["enabled"] = false,
+        },
         ["microbar"] = {
             ["enabled"] = true,
         },
-        ["bar4"] = {
-            ["enabled"] = false,
+        ["raidmarkersbar"] = {
+            ["visible"] = "show",
+            ["scale"] = 1.2,
         },
     },
     ["nameplates"] = {
