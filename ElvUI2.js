@@ -1,21 +1,21 @@
 {
     ["databars"] = {
         ["artifact"] = {
-            ["orientation"] = "HORIZONTAL",
-            ["textFormat"] = "CURREM",
             ["height"] = 10,
+            ["textFormat"] = "CURREM",
+            ["orientation"] = "HORIZONTAL",
             ["width"] = 270,
         },
         ["experience"] = {
-            ["height"] = 10,
             ["orientation"] = "HORIZONTAL",
-            ["width"] = 270,
+            ["height"] = 5,
+            ["width"] = 576,
         },
         ["honor"] = {
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 8,
+    ["currentTutorial"] = 11,
     ["general"] = {
         ["topPanel"] = false,
         ["objectiveFrameHeight"] = 720,
@@ -42,21 +42,26 @@
         ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,742",
         ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,460",
         ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,251",
-        ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,270",
+        ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
         ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-144,28",
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,210",
         ["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,342",
+        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,106",
         ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,56",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
     },
+    ["bags"] = {
+        ["ignoredItems"] = {
+            ["tt:唯一"] = "tt:唯一",
+            ["tt:任務"] = "tt:任務",
+        },
+    },
     ["chat"] = {
-        ["font"] = "聊天",
         ["timeStampFormat"] = "%H:%M:%S ",
+        ["font"] = "聊天",
         ["panelBackdrop"] = "LEFT",
-        ["tabFontSize"] = 11,
         ["panelTabBackdrop"] = true,
     },
     ["unitframe"] = {
@@ -94,9 +99,7 @@
             ["buttonsize"] = 31,
             ["buttons"] = 4,
         },
-        ["bar4"] = {
-            ["enabled"] = false,
-        },
+        ["backdropSpacingConverted"] = true,
         ["barPet"] = {
             ["point"] = "TOPLEFT",
             ["buttonsPerRow"] = 10,
@@ -105,7 +108,9 @@
         },
         ["fontOutline"] = "NONE",
         ["macrotext"] = true,
-        ["backdropSpacingConverted"] = true,
+        ["bar4"] = {
+            ["enabled"] = false,
+        },
         ["microbar"] = {
             ["enabled"] = true,
         },
@@ -145,4 +150,4 @@
             },
         },
     },
-}::profile::Cipherhammer
+}::profile::Cipherhorn
