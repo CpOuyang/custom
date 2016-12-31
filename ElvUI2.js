@@ -8,21 +8,22 @@
         },
         ["experience"] = {
             ["orientation"] = "HORIZONTAL",
-            ["height"] = 5,
-            ["width"] = 576,
+            ["height"] = 10,
+            ["width"] = 270,
         },
         ["honor"] = {
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 11,
-    ["general"] = {
-        ["topPanel"] = false,
-        ["objectiveFrameHeight"] = 720,
-        ["bottomPanel"] = false,
-        ["minimap"] = {
-            ["locationText"] = "SHOW",
-            ["locationFontSize"] = 14,
+    ["currentTutorial"] = 12,
+    ["sle"] = {
+        ["Armory"] = {
+            ["Character"] = {
+                ["Enable"] = false,
+            },
+            ["Inspect"] = {
+                ["Enable"] = false,
+            },
         },
     },
     ["movers"] = {
@@ -48,7 +49,7 @@
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,210",
         ["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,106",
+        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,342",
         ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,56",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
     },
@@ -99,7 +100,9 @@
             ["buttonsize"] = 31,
             ["buttons"] = 4,
         },
-        ["backdropSpacingConverted"] = true,
+        ["bar4"] = {
+            ["enabled"] = false,
+        },
         ["barPet"] = {
             ["point"] = "TOPLEFT",
             ["buttonsPerRow"] = 10,
@@ -108,9 +111,7 @@
         },
         ["fontOutline"] = "NONE",
         ["macrotext"] = true,
-        ["bar4"] = {
-            ["enabled"] = false,
-        },
+        ["backdropSpacingConverted"] = true,
         ["microbar"] = {
             ["enabled"] = true,
         },
@@ -140,14 +141,13 @@
             },
         },
     },
-    ["sle"] = {
-        ["Armory"] = {
-            ["Character"] = {
-                ["Enable"] = false,
-            },
-            ["Inspect"] = {
-                ["Enable"] = false,
-            },
+    ["general"] = {
+        ["topPanel"] = false,
+        ["objectiveFrameHeight"] = 720,
+        ["bottomPanel"] = false,
+        ["minimap"] = {
+            ["locationText"] = "SHOW",
+            ["locationFontSize"] = 14,
         },
     },
-}::profile::Cipherhorn
+}::profile::Cipherhammer
