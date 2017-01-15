@@ -7,9 +7,9 @@
             ["width"] = 270,
         },
         ["experience"] = {
-            ["height"] = 5,
+            ["height"] = 10,
             ["orientation"] = "HORIZONTAL",
-            ["width"] = 576,
+            ["width"] = 270,
         },
         ["honor"] = {
             ["enable"] = false,
@@ -42,13 +42,13 @@
         ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,742",
         ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,460",
         ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,251",
-        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,270",
         ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
+        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,270",
         ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-144,28",
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,210",
         ["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,106",
+        ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,342",
         ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,56",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
     },
@@ -107,8 +107,8 @@
             ["showGrid"] = false,
         },
         ["bar1"] = {
-            ["buttonspacing"] = 10,
             ["buttonsize"] = 40,
+            ["buttonspacing"] = 10,
         },
         ["bar5"] = {
             ["buttonsize"] = 31,
@@ -120,8 +120,8 @@
         ["barPet"] = {
             ["point"] = "TOPLEFT",
             ["buttonsPerRow"] = 10,
-            ["buttonsize"] = 28,
             ["backdrop"] = false,
+            ["buttonsize"] = 28,
         },
         ["fontOutline"] = "NONE",
         ["macrotext"] = true,
@@ -165,4 +165,4 @@
             },
         },
     },
-}::profile::Cipherarrow
+}::profile::Cipherdin
