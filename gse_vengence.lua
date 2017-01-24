@@ -1,3 +1,8 @@
+/cast [exists,nodead,harm,nochanneling] 惡魔尖刺
+/cast [exists,nodead,harm,nochanneling] 強化結界
+
+
+
 Sequences['復攻'] = {
   Author="cipher",  
   SpecID=577,
@@ -13,8 +18,6 @@ Sequences['復攻'] = {
       },
       PreMacro={
       },
-        "/cast [exists,nodead,harm,nochanneling] 惡魔尖刺",
-        "/cast [exists,nodead,harm,nochanneling] 強化結界",
         "/cast [exists,nodead,harm,nochanneling] 熾炎烙印",
         "/cast [exists,nodead,harm,nochanneling] 獻祭光環",
         "/cast [exists,nodead,harm,nochanneling] 削斬",
