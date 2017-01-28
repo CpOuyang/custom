@@ -20,7 +20,6 @@ Sequences['災存'] = {
       },
         "/cast [exists,nodead,harm,nochanneling] 惡魔之咬",
         "/cast [exists,nodead,harm,nochanneling] 魔刃",
-        "/cast [exists,nodead,harm,nochanneling] 魔化彈幕",
       PostMacro={
       },
       KeyRelease={
