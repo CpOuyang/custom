@@ -1,5 +1,4 @@
 /cast [exists,nodead,harm,nochanneling] 殘影
-/cast [exists,nodead,harm,nochanneling] 投擲戰刃
 
 
 
@@ -20,6 +19,7 @@ Sequences['災存'] = {
       },
         "/cast [exists,nodead,harm,nochanneling] 惡魔之咬",
         "/cast [exists,nodead,harm,nochanneling] 魔刃",
+        "/cast [exists,nodead,harm,nochanneling] 投擲戰刃",
       PostMacro={
       },
       KeyRelease={
