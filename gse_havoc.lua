@@ -46,6 +46,7 @@ Sequences['災洩'] = {
       PreMacro={
       },
         "/cast [nochanneling] 混沌之擊",
+        "/cast [nochanneling] 混沌之擊",
         "/cast [nochanneling] 劍刃之舞",
       PostMacro={
       },
