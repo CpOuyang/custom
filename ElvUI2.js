@@ -15,7 +15,7 @@
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 9,
+    ["currentTutorial"] = 4,
     ["sle"] = {
         ["Armory"] = {
             ["Inspect"] = {
@@ -144,6 +144,14 @@
                     ["height"] = 14,
                     ["text"] = {
                         ["enable"] = true,
+                        ["format"] = "CURRENT_PERCENT",
+                    },
+                },
+            },
+            ["ENEMY_PLAYER"] = {
+                ["healthbar"] = {
+                    ["text"] = {
+                        ["format"] = "CURRENT_PERCENT",
                     },
                 },
             },
