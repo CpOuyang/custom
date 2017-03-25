@@ -1,29 +1,34 @@
 {
     ["databars"] = {
         ["artifact"] = {
-            ["orientation"] = "HORIZONTAL",
-            ["textFormat"] = "CURREM",
             ["height"] = 10,
+            ["textFormat"] = "CURREM",
+            ["orientation"] = "HORIZONTAL",
             ["width"] = 270,
         },
         ["experience"] = {
-            ["height"] = 10,
             ["orientation"] = "HORIZONTAL",
+            ["height"] = 10,
             ["width"] = 270,
         },
         ["honor"] = {
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 4,
-    ["sle"] = {
-        ["Armory"] = {
-            ["Inspect"] = {
-                ["Enable"] = false,
-            },
-            ["Character"] = {
-                ["Enable"] = false,
-            },
+    ["currentTutorial"] = 6,
+    ["general"] = {
+        ["fontSize"] = 14,
+        ["bottomPanel"] = false,
+        ["topPanel"] = false,
+        ["bordercolor"] = {
+            ["b"] = 0.50196078431373,
+            ["g"] = 0.50196078431373,
+            ["r"] = 0.50196078431373,
+        },
+        ["objectiveFrameHeight"] = 720,
+        ["minimap"] = {
+            ["locationText"] = "SHOW",
+            ["locationFontSize"] = 14,
         },
     },
     ["movers"] = {
@@ -79,14 +84,31 @@
             ["raid40"] = {
                 ["height"] = 60,
             },
-            ["target"] = {
-                ["height"] = 64,
+            ["party"] = {
+                ["height"] = 60,
+            },
+            ["assist"] = {
+                ["height"] = 60,
+                ["targetsGroup"] = {
+                    ["height"] = 45,
+                    ["width"] = 90,
+                },
+                ["width"] = 90,
             },
             ["raid"] = {
                 ["height"] = 60,
+                ["width"] = 90,
             },
-            ["party"] = {
+            ["target"] = {
+                ["height"] = 64,
+            },
+            ["tank"] = {
                 ["height"] = 60,
+                ["targetsGroup"] = {
+                    ["height"] = 45,
+                    ["width"] = 90,
+                },
+                ["width"] = 90,
             },
         },
         ["fontOutline"] = "NONE",
@@ -113,9 +135,7 @@
             ["buttonsize"] = 31,
             ["buttons"] = 4,
         },
-        ["bar4"] = {
-            ["enabled"] = false,
-        },
+        ["backdropSpacingConverted"] = true,
         ["barPet"] = {
             ["point"] = "TOPLEFT",
             ["buttonsPerRow"] = 10,
@@ -124,7 +144,9 @@
         },
         ["fontOutline"] = "NONE",
         ["macrotext"] = true,
-        ["backdropSpacingConverted"] = true,
+        ["bar4"] = {
+            ["enabled"] = false,
+        },
         ["microbar"] = {
             ["enabled"] = true,
         },
@@ -162,19 +184,14 @@
             },
         },
     },
-    ["general"] = {
-        ["fontSize"] = 14,
-        ["bottomPanel"] = false,
-        ["topPanel"] = false,
-        ["bordercolor"] = {
-            ["r"] = 0.50196078431373,
-            ["g"] = 0.50196078431373,
-            ["b"] = 0.50196078431373,
-        },
-        ["objectiveFrameHeight"] = 720,
-        ["minimap"] = {
-            ["locationText"] = "SHOW",
-            ["locationFontSize"] = 14,
+    ["sle"] = {
+        ["Armory"] = {
+            ["Inspect"] = {
+                ["Enable"] = false,
+            },
+            ["Character"] = {
+                ["Enable"] = false,
+            },
         },
     },
 }::profile::Cipherarrow
