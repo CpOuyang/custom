@@ -11,9 +11,9 @@ function E:ShortValue(v)
 		end
 	elseif E.db.general.numberPrefixStyle == "CHINESE" then
 		if abs(v) >= 10e8 then
-			return format("%.0f億", v / 1e8)
-		elseif abs(v) >= 1e8 then
 			return format("%.1f億", v / 1e8)
+		elseif abs(v) >= 1e8 then
+			return format("%.2f億", v / 1e8)
 		elseif abs(v) >= 10e4 then
 			return format("%.0f萬", v / 1e4)
 		elseif abs(v) >= 1e4 then
