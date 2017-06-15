@@ -3,6 +3,35 @@
 
 
 
+Sequences['復炸'] = {
+  Author="cipher",  
+  SpecID=577,
+  Talents = "1222233",
+  Default=1,
+  Icon='ability_demonhunter_specdps',
+  MacroVersions = {
+    [1] = {
+      StepFunction = "Sequential",
+      KeyPress={
+        "/targetenemy  [noharm][dead]",
+        "/startattack",
+      },
+      PreMacro={
+      },
+        "/cast [exists,nodead,harm,nochanneling] 削斬",
+        "/cast [exists,nodead,harm,nochanneling] 削斬",
+        "/cast [exists,nodead,harm,nochanneling] 投擲戰刃",
+        "/cast [exists,nodead,harm,nochanneling] 靈魂炸彈",
+      PostMacro={
+      },
+      KeyRelease={
+        "/targetenemy  [noharm][dead]",
+        "/startattack",
+      },
+    },
+  },
+}
+
 Sequences['復攻'] = {
   Author="cipher",  
   SpecID=577,
