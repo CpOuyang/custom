@@ -19,7 +19,6 @@ Sequences['復炸'] = {
       PreMacro={
       },
         "/cast [exists,nodead,harm,nochanneling] 削斬",
-        "/cast [exists,nodead,harm,nochanneling] 投擲戰刃",
         "/cast [exists,nodead,harm,nochanneling] 切裂",
       PostMacro={
       },
