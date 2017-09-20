@@ -1,3 +1,14 @@
+function comma_value(amount)
+	local formatted = amount
+	while true do  
+		formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+		if (k==0) then
+			break
+		end
+	end
+	return formatted
+end
+
 function E:ShortValue(v)
 	if E.db.general.numberPrefixStyle == "METRIC" then
 		if abs(v) >= 1e9 then
@@ -21,6 +32,7 @@ function E:ShortValue(v)
 		else
 			return format("%d", v)
 		end
+--		return comma_value(v)
 	else
 		if abs(v) >= 1e9 then
 			return format("%.1fB", v / 1e9)
