@@ -9,6 +9,7 @@ function comma_value(amount)
 	return formatted
 end
 
+--Return short value of a number
 function E:ShortValue(v)
 	if E.db.general.numberPrefixStyle == "METRIC" then
 		if abs(v) >= 1e9 then
