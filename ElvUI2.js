@@ -15,21 +15,27 @@
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 12,
-    ["sle"] = {
-        ["Armory"] = {
-            ["Inspect"] = {
-                ["Enable"] = false,
-            },
-            ["Character"] = {
-                ["Enable"] = false,
-            },
+    ["currentTutorial"] = 13,
+    ["general"] = {
+        ["fontSize"] = 14,
+        ["bottomPanel"] = false,
+        ["objectiveFrameHeight"] = 720,
+        ["topPanel"] = false,
+        ["bordercolor"] = {
+            ["b"] = 0,
+            ["g"] = 0,
+            ["r"] = 0,
+        },
+        ["numberPrefixStyle"] = "CHINESE",
+        ["minimap"] = {
+            ["locationText"] = "SHOW",
+            ["locationFontSize"] = 14,
         },
     },
     ["movers"] = {
         ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,742",
         ["PetAB"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-73,280",
-        ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,6",
+        ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,742",
         ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,106",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
         ["ElvAB_4"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-355,314",
@@ -39,7 +45,7 @@
         ["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,247",
         ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,289",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,742",
+        ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,6",
         ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-65,-264",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
@@ -62,8 +68,10 @@
         ["itemLevelFontSize"] = 12,
         ["itemLevelFontOutline"] = "OUTLINE",
         ["ignoredItems"] = {
-            ["tt:爐石"] = "tt:爐石",
+            ["n:上將的指南針"] = "n:上將的指南針",
             ["n:治療石"] = "n:治療石",
+            ["n:飛行管理員的哨子"] = "n:飛行管理員的哨子",
+            ["tt:爐石"] = "tt:爐石",
         },
         ["bankWidth"] = 400,
         ["bagSize"] = 38,
@@ -92,14 +100,6 @@
             ["player"] = {
                 ["height"] = 64,
             },
-            ["target"] = {
-                ["height"] = 64,
-            },
-            ["raid"] = {
-                ["enable"] = false,
-                ["height"] = 60,
-                ["width"] = 90,
-            },
             ["assist"] = {
                 ["height"] = 60,
                 ["targetsGroup"] = {
@@ -108,6 +108,14 @@
                 },
                 ["enable"] = false,
                 ["width"] = 90,
+            },
+            ["raid"] = {
+                ["enable"] = false,
+                ["height"] = 60,
+                ["width"] = 90,
+            },
+            ["target"] = {
+                ["height"] = 64,
             },
             ["tank"] = {
                 ["height"] = 60,
@@ -128,7 +136,10 @@
             ["buttonsize"] = 40,
             ["buttons"] = 12,
         },
-        ["fontSize"] = 16,
+        ["bar6"] = {
+            ["buttonspacing"] = 10,
+            ["buttonsize"] = 40,
+        },
         ["bar2"] = {
             ["enabled"] = true,
             ["buttonsize"] = 40,
@@ -148,10 +159,7 @@
             ["backdrop"] = false,
             ["point"] = "TOPLEFT",
         },
-        ["bar6"] = {
-            ["buttonspacing"] = 10,
-            ["buttonsize"] = 40,
-        },
+        ["fontSize"] = 16,
         ["fontOutline"] = "NONE",
         ["macrotext"] = true,
         ["bar4"] = {
@@ -171,10 +179,16 @@
         },
     },
     ["nameplates"] = {
+        ["targetGlow"] = "style1",
         ["fontSize"] = 14,
         ["fontOutline"] = "NONE",
         ["loadDistance"] = 50,
         ["clickableHeight"] = 15,
+        ["glowColor"] = {
+            ["b"] = 0,
+            ["g"] = 1,
+            ["r"] = 1,
+        },
         ["units"] = {
             ["ENEMY_NPC"] = {
                 ["healthbar"] = {
@@ -200,20 +214,14 @@
         },
     },
     ["thinBorderColorSet"] = true,
-    ["general"] = {
-        ["fontSize"] = 14,
-        ["bottomPanel"] = false,
-        ["objectiveFrameHeight"] = 720,
-        ["topPanel"] = false,
-        ["bordercolor"] = {
-            ["r"] = 0,
-            ["g"] = 0,
-            ["b"] = 0,
-        },
-        ["numberPrefixStyle"] = "CHINESE",
-        ["minimap"] = {
-            ["locationText"] = "SHOW",
-            ["locationFontSize"] = 14,
+    ["sle"] = {
+        ["Armory"] = {
+            ["Inspect"] = {
+                ["Enable"] = false,
+            },
+            ["Character"] = {
+                ["Enable"] = false,
+            },
         },
     },
 }::profile::Cipherarrow
