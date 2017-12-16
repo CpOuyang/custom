@@ -1,74 +1,68 @@
 {
     ["databars"] = {
         ["artifact"] = {
-            ["orientation"] = "HORIZONTAL",
-            ["textFormat"] = "CURREM",
             ["height"] = 10,
+            ["textFormat"] = "CURREM",
+            ["orientation"] = "HORIZONTAL",
             ["width"] = 270,
         },
         ["experience"] = {
-            ["orientation"] = "HORIZONTAL",
             ["height"] = 10,
+            ["orientation"] = "HORIZONTAL",
             ["width"] = 270,
         },
         ["honor"] = {
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 7,
-    ["general"] = {
-        ["topPanel"] = false,
-        ["bordercolor"] = {
-            ["r"] = 0,
-            ["g"] = 0,
-            ["b"] = 0,
+    ["currentTutorial"] = 13,
+    ["sle"] = {
+        ["Armory"] = {
+            ["Inspect"] = {
+                ["Enable"] = false,
+            },
+            ["Character"] = {
+                ["Enable"] = false,
+            },
         },
-        ["minimap"] = {
-            ["locationText"] = "SHOW",
-            ["locationFontSize"] = 14,
-        },
-        ["bottomPanel"] = false,
-        ["numberPrefixStyle"] = "CHINESE",
-        ["objectiveFrameHeight"] = 720,
-        ["fontSize"] = 14,
     },
     ["movers"] = {
         ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,742",
         ["PetAB"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-73,280",
-        ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,742",
+        ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,6",
         ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,106",
-        ["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,807",
+        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
         ["ElvAB_4"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-355,314",
-        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,210",
-        ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,289",
         ["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,226",
-        ["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,247",
         ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,333",
-        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,460",
-        ["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,343",
+        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,56",
+        ["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,247",
+        ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,289",
+        ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
+        ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,742",
         ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-65,-264",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
-        ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
+        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,210",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,270",
         ["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,0,156",
-        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,251",
         ["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
+        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,251",
         ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-135,246",
-        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,210",
-        ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,6",
-        ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
+        ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
+        ["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,343",
+        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,460",
         ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,342",
-        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,56",
-        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
+        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,210",
+        ["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,807",
     },
     ["bags"] = {
         ["bagWidth"] = 400,
         ["ignoredItems"] = {
             ["n:上將的指南針"] = "n:上將的指南針",
-            ["n:治療石"] = "n:治療石",
-            ["tt:爐石"] = "tt:爐石",
             ["n:飛行管理員的哨子"] = "n:飛行管理員的哨子",
+            ["tt:爐石"] = "tt:爐石",
+            ["n:治療石"] = "n:治療石",
         },
         ["countFontOutline"] = "OUTLINE",
         ["bagSize"] = 38,
@@ -99,14 +93,8 @@
                 ["enable"] = false,
                 ["width"] = 90,
             },
-            ["assist"] = {
-                ["targetsGroup"] = {
-                    ["height"] = 45,
-                    ["width"] = 90,
-                },
-                ["height"] = 60,
-                ["enable"] = false,
-                ["width"] = 90,
+            ["target"] = {
+                ["height"] = 64,
             },
             ["party"] = {
                 ["enable"] = false,
@@ -116,8 +104,14 @@
                 ["enable"] = false,
                 ["height"] = 60,
             },
-            ["target"] = {
-                ["height"] = 64,
+            ["assist"] = {
+                ["targetsGroup"] = {
+                    ["height"] = 45,
+                    ["width"] = 90,
+                },
+                ["height"] = 60,
+                ["enable"] = false,
+                ["width"] = 90,
             },
             ["raid"] = {
                 ["enable"] = false,
@@ -181,15 +175,10 @@
     ["nameplates"] = {
         ["targetGlow"] = "style1",
         ["fontSize"] = 14,
-        ["fontOutline"] = "NONE",
         ["units"] = {
-            ["ENEMY_NPC"] = {
+            ["FRIENDLY_PLAYER"] = {
                 ["healthbar"] = {
                     ["height"] = 12,
-                    ["text"] = {
-                        ["enable"] = true,
-                        ["format"] = "CURRENT_PERCENT",
-                    },
                 },
             },
             ["FRIENDLY_NPC"] = {
@@ -200,11 +189,6 @@
             ["PLAYER"] = {
                 ["enable"] = true,
             },
-            ["HEALER"] = {
-                ["healthbar"] = {
-                    ["height"] = 12,
-                },
-            },
             ["ENEMY_PLAYER"] = {
                 ["healthbar"] = {
                     ["height"] = 12,
@@ -213,29 +197,44 @@
                     },
                 },
             },
-            ["FRIENDLY_PLAYER"] = {
+            ["HEALER"] = {
                 ["healthbar"] = {
                     ["height"] = 12,
                 },
             },
+            ["ENEMY_NPC"] = {
+                ["healthbar"] = {
+                    ["height"] = 12,
+                    ["text"] = {
+                        ["enable"] = true,
+                        ["format"] = "CURRENT_PERCENT",
+                    },
+                },
+            },
         },
         ["glowColor"] = {
-            ["r"] = 1,
-            ["g"] = 1,
             ["b"] = 0,
+            ["g"] = 1,
+            ["r"] = 1,
         },
-        ["clickableHeight"] = 15,
+        ["fontOutline"] = "NONE",
         ["loadDistance"] = 50,
     },
-    ["sle"] = {
-        ["Armory"] = {
-            ["Character"] = {
-                ["Enable"] = false,
-            },
-            ["Inspect"] = {
-                ["Enable"] = false,
-            },
+    ["general"] = {
+        ["topPanel"] = false,
+        ["bordercolor"] = {
+            ["b"] = 0,
+            ["g"] = 0,
+            ["r"] = 0,
         },
+        ["minimap"] = {
+            ["locationText"] = "SHOW",
+            ["locationFontSize"] = 14,
+        },
+        ["bottomPanel"] = false,
+        ["numberPrefixStyle"] = "CHINESE",
+        ["objectiveFrameHeight"] = 720,
+        ["fontSize"] = 14,
     },
     ["thinBorderColorSet"] = true,
 }::profile::Cipherarrow
