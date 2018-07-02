@@ -78,8 +78,6 @@ Plugin 'rakr/vim-one'
 	" colors one
 Plugin 'tomasr/molokai'
 	colors molokai
-Plugin 'flazz/vim-colorschemes'    " very rich one
-	" colors flattr
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
