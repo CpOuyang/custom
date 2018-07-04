@@ -1,6 +1,12 @@
-alias ls="ls -G"
+# allotted mac-book would load the very initial hostname in each session
+# remember to set NOPASSWD up in sudo command
+sudo hostname -fs "CP-MBP-DRD"
+
+alias ls="ls -G"		# colorize !!
 alias la="ls -Al"
 alias ll="ls -l"
+
+alias tree="tree -C"	# colorize !!
 
 git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
