@@ -3,7 +3,8 @@ Eden
 ====
 Python
 ----
-pachages
+Packages
+----
 ----
 
 When the time has come ....
