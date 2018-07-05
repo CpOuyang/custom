@@ -1,9 +1,10 @@
 ====
 Eden
 ====
-## Python
-
-### Packages
+Python
+----
+Packages
+--------
 
 When the time has come ....
 
