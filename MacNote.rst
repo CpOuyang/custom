@@ -1,9 +1,24 @@
-Mac OS Notes
+Mac Note
 ====
 
 Eden
 ----
 Always be prepared when the time has come.
+
+Homebrew
+::::
+
+1. Homebrew
+
+::
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+2. Homebrew-cask
+
+::
+
+  brew cask
 
 Shell
 ::::
@@ -28,21 +43,6 @@ Every engineer has a vim in his heart.
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 2. YouCompleteMe: huk
-
-Homebrew
-::::
-
-1. Homebrew
-
-::
-
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-2. Homebrew-cask
-
-::
-
-  brew cask
 
 Python
 ::::
