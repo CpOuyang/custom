@@ -56,7 +56,10 @@ pyenv
 ::
 
   brew install pyenv
-  
+
+virtualenv
+""""
+
 ::
 
   brew install virtualenv
