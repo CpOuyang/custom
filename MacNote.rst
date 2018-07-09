@@ -50,6 +50,9 @@ Python
 Environment
 ''''
 
+pyenv
+""""
+
 ::
 
   brew install pyenv
