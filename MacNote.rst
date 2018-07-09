@@ -34,7 +34,7 @@ fish
 
 vim
 ::::
-Every engineer has a vim in his heart.
+Every engineer has a vim inside his heart.
 
 1. Vundle: oops
 
