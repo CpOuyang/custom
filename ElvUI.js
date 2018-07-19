@@ -1,9 +1,9 @@
 {
     ["databars"] = {
         ["artifact"] = {
-            ["height"] = 10,
-            ["textFormat"] = "CURREM",
             ["orientation"] = "HORIZONTAL",
+            ["textFormat"] = "CURREM",
+            ["height"] = 10,
             ["width"] = 270,
         },
         ["experience"] = {
@@ -15,7 +15,7 @@
             ["enable"] = false,
         },
     },
-    ["currentTutorial"] = 11,
+    ["currentTutorial"] = 9,
     ["sle"] = {
         ["Armory"] = {
             ["Inspect"] = {
@@ -32,13 +32,13 @@
         ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,816",
         ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,90",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
-        ["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,226",
         ["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,343",
         ["ElvAB_4"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-351,-23",
-        ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,48",
-        ["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,247",
         ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,289",
+        ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
+        ["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,226",
+        ["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,247",
+        ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,333",
         ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,6",
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,210",
         ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-65,-264",
@@ -54,7 +54,7 @@
         ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
         ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,460",
         ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,342",
-        ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,333",
+        ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,48",
         ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,210",
     },
     ["bags"] = {
@@ -66,11 +66,11 @@
             ["tt:哨子"] = "tt:哨子",
         },
         ["countFontOutline"] = "OUTLINE",
-        ["bagSize"] = 38,
         ["itemLevelFontSize"] = 12,
         ["itemLevelFontOutline"] = "OUTLINE",
         ["bankWidth"] = 400,
         ["countFontSize"] = 12,
+        ["bagSize"] = 38,
     },
     ["chat"] = {
         ["panelTabBackdrop"] = true,
@@ -86,6 +86,7 @@
         ["fontOutline"] = "NONE",
         ["units"] = {
             ["tank"] = {
+                ["enable"] = false,
                 ["targetsGroup"] = {
                     ["height"] = 45,
                     ["width"] = 90,
@@ -106,6 +107,7 @@
                 ["height"] = 60,
             },
             ["assist"] = {
+                ["enable"] = false,
                 ["targetsGroup"] = {
                     ["height"] = 45,
                     ["width"] = 90,
@@ -158,12 +160,7 @@
         ["bar1"] = {
             ["buttonsize"] = 40,
         },
-        ["bar4"] = {
-            ["point"] = "BOTTOMLEFT",
-            ["buttonsize"] = 60,
-            ["backdrop"] = false,
-            ["showGrid"] = false,
-        },
+        ["backdropSpacingConverted"] = true,
         ["bar5"] = {
             ["buttonsize"] = 31,
             ["buttons"] = 4,
@@ -175,7 +172,12 @@
             ["backdrop"] = false,
             ["point"] = "TOPLEFT",
         },
-        ["backdropSpacingConverted"] = true,
+        ["bar4"] = {
+            ["point"] = "BOTTOMLEFT",
+            ["buttonsize"] = 60,
+            ["backdrop"] = false,
+            ["showGrid"] = false,
+        },
     },
     ["nameplates"] = {
         ["targetGlow"] = "style1",
@@ -213,9 +215,9 @@
             },
         },
         ["glowColor"] = {
-            ["r"] = 1,
-            ["g"] = 1,
             ["b"] = 0,
+            ["g"] = 1,
+            ["r"] = 1,
         },
         ["clickableHeight"] = 15,
         ["fontOutline"] = "NONE",
@@ -224,18 +226,18 @@
     ["general"] = {
         ["topPanel"] = false,
         ["bordercolor"] = {
-            ["r"] = 0,
-            ["g"] = 0,
             ["b"] = 0,
+            ["g"] = 0,
+            ["r"] = 0,
         },
         ["minimap"] = {
             ["locationText"] = "SHOW",
             ["locationFontSize"] = 14,
         },
         ["bottomPanel"] = false,
-        ["numberPrefixStyle"] = "CHINESE",
-        ["fontSize"] = 14,
         ["objectiveFrameHeight"] = 720,
+        ["fontSize"] = 14,
+        ["numberPrefixStyle"] = "CHINESE",
     },
     ["thinBorderColorSet"] = true,
 }::profile::Cipherarrow
