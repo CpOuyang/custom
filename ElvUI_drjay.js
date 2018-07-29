@@ -125,6 +125,11 @@
                 ["height"] = 60,
                 ["width"] = 90,
             },
+            ["targettarget"] = {
+                ["name"] = {
+                    ["text_format"] = "[name:medium]",
+                },
+            },
             ["assist"] = {
                 ["targetsGroup"] = {
                     ["height"] = 45,
@@ -194,6 +199,9 @@
                 },
                 ["health"] = {
                     ["position"] = "BOTTOMRIGHT",
+                },
+                ["name"] = {
+                    ["text_format"] = "[name:medium] [difficultycolor][smartlevel] [shortclassification]",
                 },
                 ["height"] = 64,
             },
