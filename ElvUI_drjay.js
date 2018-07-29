@@ -133,7 +133,6 @@
             },
             ["party"] = {
                 ["debuffs"] = {
-                    ["enable"] = false,
                     ["sizeOverride"] = 0,
                 },
                 ["power"] = {
@@ -147,6 +146,9 @@
                 },
                 ["name"] = {
                     ["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
+                },
+                ["buffs"] = {
+                    ["enable"] = true,
                 },
                 ["height"] = 48,
                 ["verticalSpacing"] = 1,
