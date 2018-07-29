@@ -30,7 +30,7 @@
         ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,747",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
         ["PetAB"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,280",
-        ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,627",
+        ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,138,700",
         ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,90",
         ["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,226",
         ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,333",
@@ -53,7 +53,7 @@
         ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-135,246",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,270",
         ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
-        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,418,503",
+        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,418,500",
         ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,342",
         ["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,343",
         ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,210",
@@ -166,18 +166,39 @@
                 ["height"] = 64,
             },
             ["raid"] = {
+                ["horizontalSpacing"] = 1,
                 ["debuffs"] = {
+                    ["anchorPoint"] = "TOP",
+                    ["sizeOverride"] = 16,
                     ["enable"] = true,
+                    ["xOffset"] = 30,
+                    ["yOffset"] = -50,
+                },
+                ["rdebuffs"] = {
+                    ["size"] = 20,
+                    ["fontOutline"] = "OUTLINE",
+                    ["xOffset"] = -30,
+                    ["yOffset"] = 5,
                 },
                 ["resurrectIcon"] = {
                     ["enable"] = false,
                 },
+                ["groupSpacing"] = 3,
                 ["raidWideSorting"] = false,
-                ["width"] = 90,
-                ["height"] = 60,
-                ["buffs"] = {
-                    ["enable"] = true,
+                ["healPrediction"] = true,
+                ["width"] = 84,
+                ["name"] = {
+                    ["text_format"] = "[name:short]",
                 },
+                ["height"] = 56,
+                ["buffs"] = {
+                    ["anchorPoint"] = "TOP",
+                    ["sizeOverride"] = 16,
+                    ["enable"] = true,
+                    ["xOffset"] = 30,
+                    ["yOffset"] = -16,
+                },
+                ["verticalSpacing"] = 1,
             },
             ["player"] = {
                 ["power"] = {
