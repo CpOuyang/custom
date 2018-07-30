@@ -35,9 +35,10 @@
         ["LootFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-120",
         ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,289",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+        ["ElvUF_FocusMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-500,-430",
         ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-135,246",
         ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,342",
-        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,210",
+        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,143",
         ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,120,820",
         ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,6",
         ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,90",
@@ -46,16 +47,16 @@
         ["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,247",
         ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,333",
         ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-65,-264",
-        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,270",
+        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,200",
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
         ["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-72,-351",
         ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
-        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,251",
+        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,200,181",
         ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,500",
         ["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,868",
         ["BossHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-72,329",
-        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,270",
-        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,210",
+        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,200",
+        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,143",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
         ["ElvAB_4"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-351,-23",
         ["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,0,156",
@@ -117,6 +118,9 @@
                 ["buffs"] = {
                     ["attachTo"] = "DEBUFFS",
                 },
+                ["castbar"] = {
+                    ["enable"] = false,
+                },
             },
             ["tank"] = {
                 ["verticalSpacing"] = 3,
@@ -155,15 +159,25 @@
                 },
             },
             ["target"] = {
+                ["castbar"] = {
+                    ["width"] = 220,
+                },
+                ["width"] = 220,
                 ["power"] = {
                     ["position"] = "BOTTOMLEFT",
                 },
                 ["name"] = {
                     ["text_format"] = "[name:medium] [difficultycolor][smartlevel] [shortclassification]",
                 },
-                ["height"] = 64,
                 ["health"] = {
                     ["position"] = "BOTTOMRIGHT",
+                },
+                ["height"] = 64,
+                ["buffs"] = {
+                    ["sizeOverride"] = 0,
+                },
+                ["aurabar"] = {
+                    ["enable"] = false,
                 },
             },
             ["boss"] = {
@@ -252,6 +266,10 @@
                 ["power"] = {
                     ["position"] = "BOTTOMRIGHT",
                 },
+                ["castbar"] = {
+                    ["width"] = 220,
+                },
+                ["width"] = 220,
                 ["health"] = {
                     ["position"] = "BOTTOMLEFT",
                 },
