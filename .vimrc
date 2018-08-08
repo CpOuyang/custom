@@ -144,7 +144,7 @@ endfunction
 " make sure the beviours of specified extension
 au BufNewFile,BufRead *.py  
     \ set tabstop=4         |
-    \ set softtabstop=4	    |
+    \ set softtabstop=4     |
     \ set shiftwidth=4      |
     \ set textwidth=79      |
     \ set expandtab         |
