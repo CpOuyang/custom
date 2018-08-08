@@ -1,3 +1,8 @@
+" python bug in 3.7.0
+if has('python3')
+  silent! python3 1
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle
 
@@ -12,13 +17,16 @@ Plugin 'VundleVim/Vundle.vim'
 call vundle#end()             " required
 filetype plugin indent on     " required
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tmhedberg/SimpylFold'               " folding definitions
     let g:SimpylFold_docstring_preview = 1
 Plugin 'tell-k/vim-autopep8'
     autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+    let g:autopep8_disable_show_diff=1      " suppress diff window as every time running
+	let g:autopep8_aggressive=2             " aggressive level
+	" let g:autopep8_on_save = 1              " on save
 Plugin 'scrooloose/nerdcommenter'
     let g:NERDSpaceDelims = 1
   	let g:NERDCompactSexyComs = 1
@@ -65,21 +73,19 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
 " Plugin 'ap/vim-buftabline'
-	" set hidden
-	" nnoremap <C-N> :bnext<CR>
-	" nnoremap <C-P> :bprev<CR>
+    " set hidden
+    " nnoremap <C-N> :bnext<CR>
+    " nnoremap <C-P> :bprev<CR>
 
 
 
 " Themes
 Plugin 'dracula/vim'
-	" color dracula
+	color dracula
 Plugin 'rakr/vim-one'
-	" colors one
+	colors one
 Plugin 'tomasr/molokai'
 	colors molokai
-Plugin 'flazz/vim-colorschemes'    " very rich one
-	" colors flattr
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -125,7 +131,7 @@ function RunPython()
     let mp = &makeprg
     let ef = &errorformat
     let exeFile = expand("%:t")
-    setlocal makeprg=python3\ -u
+    setlocal makeprg=python\ -u
     set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
     silent make %
     copen
@@ -136,16 +142,15 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " make sure the beviours of specified extension
-au BufNewFile,BufRead *.py
+au BufNewFile,BufRead *.py  
     \ set tabstop=4         |
     \ set softtabstop=4	    |
     \ set shiftwidth=4      |
     \ set textwidth=79      |
     \ set expandtab         |
-    \ set autoindent        |
-    \ set fileformat=unix
+    \ set autoindent        
 
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js,*.html,*.css,*.yml 
     \ set tabstop=2         |
     \ set softtabstop=2     |
     \ set shiftwidth=2
