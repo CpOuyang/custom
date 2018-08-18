@@ -22,7 +22,7 @@
             ["width"] = 220,
         },
     },
-    ["currentTutorial"] = 13,
+    ["currentTutorial"] = 7,
     ["sle"] = {
         ["Armory"] = {
             ["Character"] = {
@@ -60,16 +60,16 @@
         ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
         ["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-91",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,186,181",
         ["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,0,156",
+        ["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-72,-351",
         ["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,486,64",
         ["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,868",
         ["BossHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-72,329",
-        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-186,200",
-        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-186,143",
-        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,500",
-        ["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-72,-351",
         ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
+        ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-186,200",
+        ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,500",
+        ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,186,181",
+        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-186,143",
         ["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,747",
     },
     ["bags"] = {
@@ -80,12 +80,13 @@
             ["tt:爐石"] = "tt:爐石",
             ["tt:哨子"] = "tt:哨子",
         },
+        ["countFontSize"] = 12,
         ["countFontOutline"] = "OUTLINE",
+        ["bagSize"] = 38,
         ["itemLevelFontSize"] = 12,
         ["itemLevelFontOutline"] = "OUTLINE",
         ["bankWidth"] = 400,
-        ["countFontSize"] = 12,
-        ["bagSize"] = 38,
+        ["junkIcon"] = true,
     },
     ["auras"] = {
         ["debuffs"] = {
@@ -112,6 +113,7 @@
         },
         ["decimalLength"] = 2,
         ["objectiveFrameHeight"] = 720,
+        ["vendorGrays"] = true,
         ["numberPrefixStyle"] = "CHINESE",
     },
     ["unitframe"] = {
@@ -169,18 +171,27 @@
                     ["enable"] = false,
                 },
             },
-            ["player"] = {
+            ["party"] = {
+                ["debuffs"] = {
+                    ["sizeOverride"] = 0,
+                },
                 ["power"] = {
+                    ["text_format"] = "",
                     ["position"] = "BOTTOMRIGHT",
                 },
-                ["castbar"] = {
-                    ["width"] = 220,
+                ["width"] = 144,
+                ["buffs"] = {
+                    ["enable"] = true,
                 },
-                ["width"] = 220,
+                ["name"] = {
+                    ["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
+                },
                 ["health"] = {
+                    ["text_format"] = "",
                     ["position"] = "BOTTOMLEFT",
                 },
-                ["height"] = 64,
+                ["height"] = 48,
+                ["verticalSpacing"] = 1,
             },
             ["raid40"] = {
                 ["horizontalSpacing"] = 1,
@@ -259,32 +270,23 @@
                     ["yOffset"] = -16,
                 },
             },
-            ["party"] = {
-                ["debuffs"] = {
-                    ["sizeOverride"] = 0,
-                },
-                ["power"] = {
-                    ["text_format"] = "",
-                    ["position"] = "BOTTOMRIGHT",
-                },
-                ["width"] = 144,
-                ["buffs"] = {
-                    ["enable"] = true,
-                },
-                ["name"] = {
-                    ["text_format"] = "[name:medium] [difficultycolor][smartlevel]",
-                },
-                ["health"] = {
-                    ["text_format"] = "",
-                    ["position"] = "BOTTOMLEFT",
-                },
-                ["height"] = 48,
-                ["verticalSpacing"] = 1,
-            },
             ["boss"] = {
                 ["enable"] = false,
                 ["width"] = 180,
                 ["height"] = 60,
+            },
+            ["player"] = {
+                ["power"] = {
+                    ["position"] = "BOTTOMRIGHT",
+                },
+                ["castbar"] = {
+                    ["width"] = 220,
+                },
+                ["width"] = 220,
+                ["health"] = {
+                    ["position"] = "BOTTOMLEFT",
+                },
+                ["height"] = 64,
             },
         },
     },
