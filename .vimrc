@@ -21,7 +21,7 @@ filetype plugin indent on     " required
 
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tmhedberg/SimpylFold'               " folding definitions
-    " let g:SimpylFold_docstring_preview = 1
+	let g:SimpylFold_docstring_preview = 1
 Plugin 'tell-k/vim-autopep8'
     autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
     let g:autopep8_disable_show_diff=1      " suppress diff window as every time running
@@ -46,16 +46,16 @@ Plugin 'scrooloose/nerdtree'
 " Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
 Plugin 'itchyny/lightline.vim'
-    let g:lightline = {
-        \ 'colorscheme': 'wombat',
-        \ 'active': {
-        \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'readonly', 'filename', 'modified', 'charvaluehex' ] ]
-        \ },
-        \ 'component': {
-        \   'charvaluehex': '0x%B'
-        \ },
-        \ }
+	let g:lightline = {
+		\ 'colorscheme': 'wombat',
+		\ 'active': {
+		\   'left': [ [ 'mode', 'paste' ],
+		\             [ 'readonly', 'filename', 'modified', 'charvaluehex' ] ]
+		\ },
+		\ 'component': {
+		\   'charvaluehex': '0x%B'
+		\ },
+		\ }
 " Plugin 'terryma/vim-multiple-cursors'   " seem bugged in brew vim
 	" let g:multi_cursor_use_default_mapping=0
     "
@@ -78,7 +78,7 @@ Plugin 'ap/vim-buftabline'
 	" nnoremap <C-P> :bprev<CR>
 	nnoremap H :tabprev<CR>
 	nnoremap L :tabnext<CR>
-Plugin 'majutsushi/tagbar'               " 'brew install ctags' needed
+Plugin 'majutsushi/tagbar'              " 'brew install ctags' needed
 	nnoremap <C-T> :TagbarToggle<CR> 
 
 
@@ -126,6 +126,7 @@ set whichwrap+=<,>,h,l
 
 highlight Comment cterm=bold ctermfg=005        " settings of comments
     " refer the palette to https://github.com/gawin/bash-colors-256
+highlight Visual guibg=Grey ctermbg=Grey
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
