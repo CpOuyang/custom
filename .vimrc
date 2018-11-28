@@ -102,6 +102,7 @@ set cindent                   " indent as C lang
 set clipboard=unnamed         " enable clipboard and so do hot-heys
 set cursorcolumn
 set cursorline
+set encoding=utf-8
 set fenc=utf-8
 set fileformat=unix           " save as unix format
 set guifont=Monaco:h13        " fonts
