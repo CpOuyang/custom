@@ -2,11 +2,13 @@
 # remember to set NOPASSWD up in sudo command
 sudo hostname -fs "CP-MBP-DRD"
 
-alias ls="ls -G"        # colorize !!
+alias ls="ls -G"
 alias la="ls -Al"
 alias ll="ls -l"
 
-alias tree="tree -C"    # colorize !!
+alias tree="tree -C"
+
+alias gl="git log --graph --pretty=oneline --abbrev-commit"
 
 git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
