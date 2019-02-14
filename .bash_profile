@@ -1,12 +1,19 @@
 # allotted mac-book would load the very initial hostname in each session
 # remember to set NOPASSWD up in sudo command
-sudo hostname -fs "CP-MBP-DRD"
+# sudo hostname -fs "CP-MBP-DRD"
+
+# short-term debug
+alias dc-debug="docker-compose -f docker-compose.yml -f docker-compose.cli.yml exec web nosetests --with-coverage --nocapture --nologcapture --cover-erase --cover-html" # "--cover-package=api,module,utils"
+# pip upgrade all
+alias pipua="pip list --outdated --format freeze | cut -d = -f 1 | xargs pip install --upgrade"
 
 alias ls="ls -G"
 alias la="ls -Al"
 alias ll="ls -l"
 
 alias tree="tree -C"
+
+alias dc="docker-compose"
 
 alias gl="git log --graph --pretty=oneline --abbrev-commit"
 
