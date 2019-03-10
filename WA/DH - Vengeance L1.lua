@@ -63,7 +63,7 @@
     ["internalVersion"] = 11,
     ["yOffset"] = -120,
     ["selfPoint"] = "BOTTOMLEFT",
-    ["id"] = "_DH - Vengence L1",
+    ["id"] = "_DH - Vengeance L1",
     ["scale"] = 1,
     ["frameStrata"] = 1,
     ["anchorFrameType"] = "SCREEN",
