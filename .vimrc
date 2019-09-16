@@ -56,20 +56,20 @@ Plugin 'itchyny/lightline.vim'
 		\   'charvaluehex': '0x%B'
 		\ },
 		\ }
-" Plugin 'terryma/vim-multiple-cursors'   " seem bugged in brew vim
-	" let g:multi_cursor_use_default_mapping=0
-    "
-	" " Default mapping
-	" let g:multi_cursor_start_word_key      = '<C-n>'
-	" let g:multi_cursor_select_all_word_key = '<A-n>'
-	" let g:multi_cursor_start_key           = 'g<C-n>'
-	" let g:multi_cursor_select_all_key      = 'g<A-n>'
-	" let g:multi_cursor_next_key            = '<C-n>'
-	" let g:multi_cursor_prev_key            = '<C-p>'
-	" let g:multi_cursor_skip_key            = '<C-x>'
-	" let g:multi_cursor_quit_key            = '<Esc>'
+Plugin 'terryma/vim-multiple-cursors'
+	let g:multi_cursor_use_default_mapping=0
+
+	" Default mapping
+	let g:multi_cursor_start_word_key      = '<C-n>'
+	let g:multi_cursor_select_all_word_key = '<A-n>'
+	let g:multi_cursor_start_key           = 'g<C-n>'
+	let g:multi_cursor_select_all_key      = 'g<A-n>'
+	let g:multi_cursor_next_key            = '<C-n>'
+	let g:multi_cursor_prev_key            = '<C-p>'
+	let g:multi_cursor_skip_key            = '<C-x>'
+	let g:multi_cursor_quit_key            = '<Esc>'
 " Plugin 'vim-python/python-syntax'       " no effects
-	" let g:python_highlight_all = 1
+"     let g:python_highlight_all = 1
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'ap/vim-buftabline'
@@ -80,6 +80,7 @@ Plugin 'ap/vim-buftabline'
 	nnoremap L :tabnext<CR>
 Plugin 'majutsushi/tagbar'              " 'brew install ctags' needed
 	nnoremap <C-T> :TagbarToggle<CR> 
+Plugin 'moll/vim-node'
 
 
 " Themes
