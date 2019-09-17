@@ -156,7 +156,7 @@ au BufNewFile,BufRead *.py
     \ set expandtab         |
     \ set autoindent        
 
-au BufNewFile,BufRead *.js,*.html,*.css,*.yml 
+au BufNewFile,BufRead *.js,*.html,*.css,*.yml,*.md
     \ set tabstop=2         |
     \ set softtabstop=2     |
     \ set shiftwidth=2
