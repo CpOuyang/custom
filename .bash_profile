@@ -2,10 +2,8 @@
 # remember to set NOPASSWD up in sudo command
 # sudo hostname -fs "CP-MBP-DRD"
 
-# short-term debug
-alias dc-debug="docker-compose -f docker-compose.yml -f docker-compose.cli.yml exec web nosetests --with-coverage --nocapture --nologcapture --cover-erase --cover-html" # "--cover-package=api,module,utils"
 # pip upgrade all
-alias pipua="pip list --outdated --format freeze | cut -d = -f 1 | xargs pip install --upgrade"
+alias pipua="pip list --outdated --format freeze | cut -d= -f1 | xargs pip install --upgrade"
 
 alias ls="ls -G"
 alias la="ls -Al"
@@ -32,3 +30,7 @@ fi
 
 # enable brew bash_completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+# locale
+export LC_ALL=en_US.UTF-8
+export PATH="/usr/local/sbin:$PATH"
