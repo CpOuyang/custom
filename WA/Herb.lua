@@ -6,22 +6,25 @@
         [4] = 0.5,
     },
     ["controlledChildren"] = {
-        [1] = "海莖草",
-        [2] = "亞昆達之噬",
-        [3] = "河芽草",
-        [4] = "海妖花粉",
-        [5] = "星苔",
-        [6] = "冬吻花",
-        [7] = "錨草",
+        [1] = "白金礦石",
+        [2] = "蒙那萊礦石",
+        [3] = "風暴白銀礦石",
+        [4] = "奧司曼礦石",
+        [5] = "海莖草",
+        [6] = "亞昆達之噬",
+        [7] = "河芽草",
+        [8] = "海妖花粉",
+        [9] = "星苔",
+        [10] = "冬吻花",
+        [11] = "錨草",
+        [12] = "辛葵",
     },
     ["borderBackdrop"] = "Blizzard Tooltip",
-    ["authorOptions"] = {
-    },
+    ["xOffset"] = 420,
     ["border"] = false,
     ["borderEdge"] = "None",
     ["regionType"] = "group",
     ["borderSize"] = 16,
-    ["xOffset"] = 420,
     ["borderColor"] = {
         [1] = 1,
         [2] = 1,
@@ -30,24 +33,24 @@
     },
     ["animation"] = {
         ["start"] = {
-            ["duration_type"] = "seconds",
             ["type"] = "none",
+            ["duration_type"] = "seconds",
         },
         ["main"] = {
-            ["duration_type"] = "seconds",
             ["type"] = "none",
+            ["duration_type"] = "seconds",
         },
         ["finish"] = {
-            ["duration_type"] = "seconds",
             ["type"] = "none",
+            ["duration_type"] = "seconds",
         },
     },
     ["actions"] = {
         ["start"] = {
         },
-        ["finish"] = {
-        },
         ["init"] = {
+        },
+        ["finish"] = {
         },
     },
     ["triggers"] = {
@@ -56,11 +59,11 @@
                 ["type"] = "aura2",
                 ["subeventSuffix"] = "_CAST_START",
                 ["event"] = "Health",
-                ["names"] = {
-                },
+                ["subeventPrefix"] = "SPELL",
                 ["spellIds"] = {
                 },
-                ["subeventPrefix"] = "SPELL",
+                ["names"] = {
+                },
                 ["unit"] = "player",
                 ["debuffType"] = "HELPFUL",
             },
@@ -68,19 +71,20 @@
             },
         },
     },
-    ["expanded"] = true,
-    ["internalVersion"] = 11,
-    ["yOffset"] = -455,
+    ["authorOptions"] = {
+    },
+    ["borderOffset"] = 5,
+    ["yOffset"] = -450,
     ["selfPoint"] = "BOTTOMLEFT",
     ["id"] = "Herb",
     ["anchorPoint"] = "CENTER",
     ["frameStrata"] = 1,
     ["anchorFrameType"] = "SCREEN",
-    ["borderInset"] = 11,
+    ["uid"] = "QrAJ5MHCkX9",
     ["config"] = {
     },
-    ["uid"] = "2WJJwdW7ciF",
-    ["borderOffset"] = 5,
+    ["scale"] = 1,
+    ["internalVersion"] = 26,
     ["conditions"] = {
     },
     ["load"] = {
@@ -98,5 +102,5 @@
             },
         },
     },
-    ["scale"] = 1,
+    ["borderInset"] = 11,
 }
