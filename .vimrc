@@ -41,6 +41,7 @@ Plugin 'scrooloose/nerdtree'
     let NERDTreeShowBookmarks=1
     let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
     let NERDTreeWinSize=25
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Plugin 'powerline/powerline'              " too hard to install
 " Plugin 'vim-airline/vim-airline'          " so-so status line
 " Plugin 'vim-airline/vim-airline-themes'
