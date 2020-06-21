@@ -1,7 +1,10 @@
 {
     ["databars"] = {
-        ["honor"] = {
-            ["enable"] = false,
+        ["azerite"] = {
+            ["height"] = 10,
+            ["textFormat"] = "CURPERC",
+            ["orientation"] = "HORIZONTAL",
+            ["width"] = 220,
         },
         ["experience"] = {
             ["height"] = 10,
@@ -9,22 +12,27 @@
             ["orientation"] = "HORIZONTAL",
             ["width"] = 220,
         },
-        ["azerite"] = {
-            ["height"] = 10,
-            ["textFormat"] = "CURPERC",
-            ["orientation"] = "HORIZONTAL",
-            ["width"] = 220,
+        ["honor"] = {
+            ["enable"] = false,
         },
     },
     ["currentTutorial"] = 12,
-    ["sle"] = {
-        ["Armory"] = {
-            ["Character"] = {
-                ["Enable"] = false,
-            },
-            ["Inspect"] = {
-                ["Enable"] = false,
-            },
+    ["general"] = {
+        ["fontSize"] = 14,
+        ["itemLevel"] = {
+            ["displayCharacterInfo"] = false,
+            ["displayInspectInfo"] = false,
+        },
+        ["objectiveFrameHeight"] = 720,
+        ["bordercolor"] = {
+            ["b"] = 0,
+            ["g"] = 0,
+            ["r"] = 0,
+        },
+        ["autoRepair"] = "GUILD",
+        ["minimap"] = {
+            ["locationText"] = "SHOW",
+            ["locationFontSize"] = 14,
         },
     },
     ["movers"] = {
@@ -37,51 +45,39 @@
         ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,130",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
         ["ElvUF_FocusMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-500,-430",
-        ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-135,247",
+        ["DurabilityFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-385,-203",
         ["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-186,272",
         ["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-475,300",
-        ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,120,820",
+        ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,20,-280",
         ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,6",
         ["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,90",
-        ["DurabilityFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-385,-203",
-        ["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,352",
+        ["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-135,247",
         ["ElvUI_RMBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-369,381",
+        ["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,352",
+        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-315,200",
         ["AzeriteBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-270,348",
         ["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,0,48",
         ["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,247",
         ["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,-235,132",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
-        ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
-        ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-140,-212",
-        ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-315,200",
         ["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-91",
+        ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-140,-212",
+        ["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4",
+        ["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
+        ["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,0,156",
         ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,270,281",
         ["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-72,-351",
-        ["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,0,156",
         ["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-7,7",
         ["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,868",
         ["BossHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-72,329",
-        ["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,486,64",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-270,300",
+        ["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,486,64",
         ["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,410,400",
-        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,270,300",
         ["ArtifactBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-200,333",
+        ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,270,300",
         ["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,747",
     },
-    ["bags"] = {
-        ["countFontSize"] = 12,
-        ["vendorGrays"] = {
-            ["enable"] = true,
-        },
-        ["countFontOutline"] = "OUTLINE",
-        ["bankWidth"] = 400,
-        ["itemLevelFontSize"] = 12,
-        ["itemLevelFontOutline"] = "OUTLINE",
-        ["bagSize"] = 40,
-        ["bagWidth"] = 440,
-        ["junkIcon"] = true,
-    },
+    ["v11NamePlateReset"] = true,
     ["hideTutorial"] = true,
     ["chat"] = {
         ["font"] = "聊天",
@@ -97,6 +93,7 @@
             ["countFontSize"] = 12,
             ["durationFontSize"] = 12,
         },
+        ["fontOutline"] = "OUTLINE",
         ["buffs"] = {
             ["countFontSize"] = 12,
             ["durationFontSize"] = 12,
@@ -112,16 +109,6 @@
         ["smoothbars"] = true,
         ["smartRaidFilter"] = false,
         ["units"] = {
-            ["pet"] = {
-                ["colorOverride"] = "FORCE_OFF",
-                ["buffs"] = {
-                    ["attachTo"] = "DEBUFFS",
-                },
-                ["castbar"] = {
-                    ["enable"] = false,
-                    ["width"] = 130,
-                },
-            },
             ["tank"] = {
                 ["enable"] = false,
                 ["width"] = 84,
@@ -136,9 +123,7 @@
                 ["debuffs"] = {
                     ["sizeOverride"] = 0,
                 },
-                ["buffs"] = {
-                    ["enable"] = true,
-                },
+                ["verticalSpacing"] = 6,
                 ["power"] = {
                     ["text_format"] = "",
                     ["position"] = "BOTTOMRIGHT",
@@ -157,43 +142,12 @@
                     ["position"] = "TOPLEFT",
                 },
                 ["height"] = 36,
-                ["verticalSpacing"] = 6,
-            },
-            ["raid"] = {
-                ["horizontalSpacing"] = 1,
-                ["debuffs"] = {
-                    ["anchorPoint"] = "TOP",
-                    ["sizeOverride"] = 16,
-                    ["enable"] = true,
-                    ["xOffset"] = 30,
-                    ["yOffset"] = -50,
-                },
-                ["rdebuffs"] = {
-                    ["size"] = 20,
-                    ["fontOutline"] = "OUTLINE",
-                    ["xOffset"] = -30,
-                    ["yOffset"] = 5,
-                },
-                ["resurrectIcon"] = {
-                    ["enable"] = false,
-                },
-                ["groupSpacing"] = 3,
-                ["healPrediction"] = {
-                    ["enable"] = true,
-                },
-                ["width"] = 96,
-                ["name"] = {
-                    ["text_format"] = "[name:short]",
-                },
-                ["height"] = 56,
-                ["verticalSpacing"] = 1,
                 ["buffs"] = {
-                    ["anchorPoint"] = "TOP",
-                    ["sizeOverride"] = 16,
                     ["enable"] = true,
-                    ["xOffset"] = 30,
-                    ["yOffset"] = -16,
                 },
+            },
+            ["arena"] = {
+                ["enable"] = false,
             },
             ["targettarget"] = {
                 ["power"] = {
@@ -208,15 +162,72 @@
                     ["position"] = "TOPRIGHT",
                 },
             },
+            ["assist"] = {
+                ["enable"] = false,
+                ["width"] = 84,
+                ["targetsGroup"] = {
+                    ["height"] = 45,
+                    ["width"] = 90,
+                },
+                ["height"] = 56,
+                ["verticalSpacing"] = 3,
+            },
+            ["boss"] = {
+                ["enable"] = false,
+                ["width"] = 180,
+                ["height"] = 60,
+            },
+            ["raid40"] = {
+                ["horizontalSpacing"] = 1,
+                ["debuffs"] = {
+                    ["anchorPoint"] = "TOP",
+                    ["sizeOverride"] = 16,
+                    ["enable"] = true,
+                    ["xOffset"] = 30,
+                    ["yOffset"] = -50,
+                },
+                ["rdebuffs"] = {
+                    ["size"] = 20,
+                    ["xOffset"] = -30,
+                    ["fontOutline"] = "OUTLINE",
+                    ["enable"] = true,
+                    ["yOffset"] = 5,
+                },
+                ["resurrectIcon"] = {
+                    ["enable"] = false,
+                },
+                ["groupSpacing"] = 2,
+                ["power"] = {
+                    ["enable"] = true,
+                },
+                ["healPrediction"] = {
+                    ["enable"] = true,
+                },
+                ["name"] = {
+                    ["text_format"] = "[name:short]",
+                },
+                ["roleIcon"] = {
+                    ["enable"] = true,
+                },
+                ["height"] = 48,
+                ["verticalSpacing"] = 1,
+                ["buffs"] = {
+                    ["anchorPoint"] = "TOP",
+                    ["sizeOverride"] = 16,
+                    ["enable"] = true,
+                    ["xOffset"] = 30,
+                    ["yOffset"] = -16,
+                },
+            },
             ["target"] = {
                 ["aurabar"] = {
                     ["enable"] = false,
                 },
-                ["power"] = {
-                    ["position"] = "BOTTOMLEFT",
-                },
                 ["castbar"] = {
                     ["width"] = 220,
+                },
+                ["power"] = {
+                    ["position"] = "BOTTOMLEFT",
                 },
                 ["width"] = 220,
                 ["name"] = {
@@ -236,12 +247,7 @@
                     ["anchorPoint"] = "TOPLEFT",
                 },
             },
-            ["boss"] = {
-                ["enable"] = false,
-                ["width"] = 180,
-                ["height"] = 60,
-            },
-            ["raid40"] = {
+            ["raid"] = {
                 ["horizontalSpacing"] = 1,
                 ["debuffs"] = {
                     ["anchorPoint"] = "TOP",
@@ -250,22 +256,25 @@
                     ["xOffset"] = 30,
                     ["yOffset"] = -50,
                 },
-                ["enable"] = false,
                 ["rdebuffs"] = {
                     ["size"] = 20,
+                    ["fontOutline"] = "OUTLINE",
                     ["xOffset"] = -30,
-                    ["enable"] = true,
                     ["yOffset"] = 5,
                 },
-                ["groupSpacing"] = 3,
-                ["power"] = {
+                ["resurrectIcon"] = {
+                    ["enable"] = false,
+                },
+                ["groupSpacing"] = 2,
+                ["healPrediction"] = {
                     ["enable"] = true,
                 },
-                ["width"] = 84,
+                ["numGroups"] = 8,
                 ["name"] = {
                     ["text_format"] = "[name:short]",
                 },
-                ["height"] = 56,
+                ["height"] = 48,
+                ["verticalSpacing"] = 1,
                 ["buffs"] = {
                     ["anchorPoint"] = "TOP",
                     ["sizeOverride"] = 16,
@@ -273,20 +282,6 @@
                     ["xOffset"] = 30,
                     ["yOffset"] = -16,
                 },
-                ["verticalSpacing"] = 1,
-            },
-            ["assist"] = {
-                ["enable"] = false,
-                ["width"] = 84,
-                ["targetsGroup"] = {
-                    ["height"] = 45,
-                    ["width"] = 90,
-                },
-                ["height"] = 56,
-                ["verticalSpacing"] = 3,
-            },
-            ["arena"] = {
-                ["enable"] = false,
             },
             ["player"] = {
                 ["aurabar"] = {
@@ -296,11 +291,10 @@
                     ["width"] = 220,
                 },
                 ["width"] = 220,
-                ["name"] = {
-                    ["attachTextTo"] = "Frame",
-                    ["yOffset"] = 24,
-                    ["text_format"] = "[name]",
-                    ["position"] = "TOPLEFT",
+                ["health"] = {
+                    ["yOffset"] = -26,
+                    ["text_format"] = "[perhp]% || [health:current]",
+                    ["position"] = "BOTTOMRIGHT",
                 },
                 ["power"] = {
                     ["position"] = "BOTTOMRIGHT",
@@ -310,30 +304,33 @@
                     ["enable"] = true,
                     ["anchorPoint"] = "TOPRIGHT",
                 },
-                ["health"] = {
-                    ["yOffset"] = -26,
-                    ["text_format"] = "[perhp]% || [health:current]",
-                    ["position"] = "BOTTOMRIGHT",
+                ["name"] = {
+                    ["attachTextTo"] = "Frame",
+                    ["yOffset"] = 24,
+                    ["text_format"] = "[name]",
+                    ["position"] = "TOPLEFT",
+                },
+            },
+            ["pet"] = {
+                ["colorOverride"] = "FORCE_OFF",
+                ["buffs"] = {
+                    ["attachTo"] = "DEBUFFS",
+                },
+                ["castbar"] = {
+                    ["enable"] = false,
+                    ["width"] = 130,
                 },
             },
         },
     },
-    ["general"] = {
-        ["fontSize"] = 14,
-        ["itemLevel"] = {
-            ["displayCharacterInfo"] = false,
-            ["displayInspectInfo"] = false,
-        },
-        ["objectiveFrameHeight"] = 720,
-        ["bordercolor"] = {
-            ["r"] = 0,
-            ["g"] = 0,
-            ["b"] = 0,
-        },
-        ["autoRepair"] = "GUILD",
-        ["minimap"] = {
-            ["locationText"] = "SHOW",
-            ["locationFontSize"] = 14,
+    ["sle"] = {
+        ["Armory"] = {
+            ["Character"] = {
+                ["Enable"] = false,
+            },
+            ["Inspect"] = {
+                ["Enable"] = false,
+            },
         },
     },
     ["actionbar"] = {
@@ -374,20 +371,59 @@
             ["enemyWidth"] = 180,
         },
         ["units"] = {
+            ["FRIENDLY_NPC"] = {
+                ["name"] = {
+                    ["fontSize"] = 14,
+                },
+            },
             ["ENEMY_NPC"] = {
                 ["health"] = {
                     ["height"] = 14,
                     ["text"] = {
-                        ["fontSize"] = 12,
+                        ["fontSize"] = 14,
                     },
                 },
                 ["name"] = {
                     ["fontSize"] = 14,
                 },
             },
+            ["ENEMY_PLAYER"] = {
+                ["name"] = {
+                    ["fontSize"] = 14,
+                },
+                ["health"] = {
+                    ["height"] = 14,
+                    ["text"] = {
+                        ["fontSize"] = 14,
+                    },
+                },
+            },
+            ["FRIENDLY_PLAYER"] = {
+                ["name"] = {
+                    ["fontSize"] = 14,
+                },
+                ["health"] = {
+                    ["height"] = 14,
+                    ["text"] = {
+                        ["fontSize"] = 14,
+                    },
+                },
+            },
         },
     },
-    ["v11NamePlateReset"] = true,
+    ["bags"] = {
+        ["countFontSize"] = 12,
+        ["vendorGrays"] = {
+            ["enable"] = true,
+        },
+        ["countFontOutline"] = "OUTLINE",
+        ["bankWidth"] = 400,
+        ["itemLevelFontSize"] = 12,
+        ["itemLevelFontOutline"] = "OUTLINE",
+        ["bagSize"] = 40,
+        ["bagWidth"] = 440,
+        ["junkIcon"] = true,
+    },
     ["thinBorderColorSet"] = true,
     ["AuraWatch"] = {
         ["loadDefault"] = true,
@@ -534,23 +570,23 @@
                 ["Name"] = "目标减益",
                 ["List"] = {
                     [1] = {
-                        ["UnitID"] = "target",
                         ["AuraID"] = 1130,
+                        ["UnitID"] = "target",
                         ["Caster"] = "all",
                     },
                     [2] = {
-                        ["UnitID"] = "target",
                         ["AuraID"] = 1978,
+                        ["UnitID"] = "target",
                         ["Caster"] = "player",
                     },
                     [3] = {
-                        ["UnitID"] = "target",
                         ["AuraID"] = 3674,
+                        ["UnitID"] = "target",
                         ["Caster"] = "player",
                     },
                     [4] = {
-                        ["UnitID"] = "target",
                         ["AuraID"] = 53301,
+                        ["UnitID"] = "target",
                         ["Caster"] = "player",
                     },
                 },
