@@ -1,0 +1,174 @@
+{
+    ["grow"] = "HORIZONTAL",
+    ["controlledChildren"] = {
+        [1] = "Taunt 2",
+        [2] = "Ashjra'kamas, Shroud of Resolve CD",
+        [3] = "Heroic Leap 2",
+        [4] = "Dragon Charge 2",
+        [5] = "Storm Bolt 2",
+        [6] = "Shockwave 2",
+        [7] = "Intimidating Shout 2",
+        [8] = "Berserker Rage",
+        [9] = "War Banner",
+        [10] = "Arcane Torrent War",
+        [11] = "Shadowmeld War",
+        [12] = "Stoneform War",
+    },
+    ["borderBackdrop"] = "Blizzard Tooltip",
+    ["authorOptions"] = {
+    },
+    ["preferToUpdate"] = false,
+    ["yOffset"] = -370,
+    ["gridType"] = "RD",
+    ["borderColor"] = {
+        [1] = 0,
+        [2] = 0,
+        [3] = 0,
+        [4] = 1,
+    },
+    ["space"] = 4,
+    ["url"] = "https://wago.io/BRBB7Wykj/14",
+    ["actions"] = {
+        ["start"] = {
+        },
+        ["init"] = {
+        },
+        ["finish"] = {
+        },
+    },
+    ["triggers"] = {
+        [1] = {
+            ["trigger"] = {
+                ["type"] = "aura",
+                ["subeventSuffix"] = "_CAST_START",
+                ["event"] = "Health",
+                ["unit"] = "player",
+                ["spellIds"] = {
+                },
+                ["debuffType"] = "HELPFUL",
+                ["subeventPrefix"] = "SPELL",
+                ["names"] = {
+                },
+                ["buffShowOn"] = "showOnActive",
+            },
+            ["untrigger"] = {
+            },
+        },
+        ["disjunctive"] = "all",
+        ["activeTriggerMode"] = -10,
+    },
+    ["columnSpace"] = 1,
+    ["internalVersion"] = 40,
+    ["useLimit"] = false,
+    ["align"] = "CENTER",
+    ["desc"] = "Made by Dahis",
+    ["rotation"] = 0,
+    ["version"] = 14,
+    ["borderInset"] = 0,
+    ["load"] = {
+        ["ingroup"] = {
+            ["multi"] = {
+            },
+        },
+        ["talent"] = {
+            ["multi"] = {
+            },
+        },
+        ["class"] = {
+            ["single"] = "WARRIOR",
+            ["multi"] = {
+            },
+        },
+        ["spec"] = {
+            ["multi"] = {
+            },
+        },
+        ["use_class"] = "true",
+        ["race"] = {
+            ["multi"] = {
+            },
+        },
+        ["talent2"] = {
+            ["multi"] = {
+            },
+        },
+        ["faction"] = {
+            ["multi"] = {
+            },
+        },
+        ["difficulty"] = {
+            ["multi"] = {
+            },
+        },
+        ["role"] = {
+            ["multi"] = {
+            },
+        },
+        ["pvptalent"] = {
+            ["multi"] = {
+            },
+        },
+        ["size"] = {
+            ["multi"] = {
+            },
+        },
+    },
+    ["radius"] = 200,
+    ["backdropColor"] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 0.5,
+    },
+    ["limit"] = 5,
+    ["animate"] = false,
+    ["rowSpace"] = 1,
+    ["scale"] = 1,
+    ["anchorPoint"] = "CENTER",
+    ["border"] = false,
+    ["borderEdge"] = "1 Pixel",
+    ["regionType"] = "dynamicgroup",
+    ["borderSize"] = 2,
+    ["sort"] = "none",
+    ["xOffset"] = 0,
+    ["stagger"] = 0,
+    ["constantFactor"] = "RADIUS",
+    ["fullCircle"] = true,
+    ["borderOffset"] = 16,
+    ["semver"] = "1.0.13",
+    ["tocversion"] = 80300,
+    ["id"] = "Warrior > Bar 3",
+    ["gridWidth"] = 5,
+    ["frameStrata"] = 3,
+    ["anchorFrameType"] = "SCREEN",
+    ["arcLength"] = 360,
+    ["uid"] = "TxjgY(LUBR9",
+    ["animation"] = {
+        ["start"] = {
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeStrength"] = 3,
+            ["easeType"] = "none",
+        },
+        ["main"] = {
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeStrength"] = 3,
+            ["easeType"] = "none",
+        },
+        ["finish"] = {
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeStrength"] = 3,
+            ["easeType"] = "none",
+        },
+    },
+    ["config"] = {
+    },
+    ["conditions"] = {
+    },
+    ["information"] = {
+        ["ignoreOptionsEventErrors"] = true,
+    },
+    ["selfPoint"] = "CENTER",
+}
