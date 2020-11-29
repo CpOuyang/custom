@@ -1,0 +1,113 @@
+{
+    ["controlledChildren"] = {
+        [1] = "Warrior > Power (Bar) 2",
+        [2] = "Warrior > Power (Text) 2",
+    },
+    ["borderBackdrop"] = "Blizzard Tooltip",
+    ["xOffset"] = -1,
+    ["preferToUpdate"] = false,
+    ["yOffset"] = -1,
+    ["anchorPoint"] = "CENTER",
+    ["borderColor"] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 0.5,
+    },
+    ["url"] = "https://wago.io/7unp6Fbm8/9",
+    ["actions"] = {
+        ["start"] = {
+        },
+        ["init"] = {
+        },
+        ["finish"] = {
+        },
+    },
+    ["triggers"] = {
+        [1] = {
+            ["trigger"] = {
+                ["debuffType"] = "HELPFUL",
+                ["type"] = "aura2",
+                ["spellIds"] = {
+                },
+                ["subeventSuffix"] = "_CAST_START",
+                ["subeventPrefix"] = "SPELL",
+                ["names"] = {
+                },
+                ["event"] = "Health",
+                ["unit"] = "player",
+            },
+            ["untrigger"] = {
+            },
+        },
+    },
+    ["internalVersion"] = 40,
+    ["selfPoint"] = "BOTTOMLEFT",
+    ["desc"] = "Made by Dahis",
+    ["version"] = 9,
+    ["load"] = {
+        ["use_class"] = "true",
+        ["class"] = {
+            ["single"] = "WARRIOR",
+            ["multi"] = {
+            },
+        },
+        ["spec"] = {
+            ["multi"] = {
+            },
+        },
+        ["size"] = {
+            ["multi"] = {
+            },
+        },
+    },
+    ["backdropColor"] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 0.5,
+    },
+    ["scale"] = 1,
+    ["border"] = false,
+    ["borderEdge"] = "None",
+    ["regionType"] = "group",
+    ["borderSize"] = 16,
+    ["borderOffset"] = 5,
+    ["semver"] = "1.0.8",
+    ["tocversion"] = 80300,
+    ["id"] = "Warrior > Power Bar Group",
+    ["frameStrata"] = 3,
+    ["anchorFrameType"] = "SCREEN",
+    ["authorOptions"] = {
+    },
+    ["config"] = {
+    },
+    ["uid"] = "guU0wqqZSxi",
+    ["borderInset"] = 11,
+    ["conditions"] = {
+    },
+    ["information"] = {
+        ["ignoreOptionsEventErrors"] = true,
+        ["groupOffset"] = true,
+    },
+    ["animation"] = {
+        ["start"] = {
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeStrength"] = 3,
+            ["easeType"] = "none",
+        },
+        ["main"] = {
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeStrength"] = 3,
+            ["easeType"] = "none",
+        },
+        ["finish"] = {
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeStrength"] = 3,
+            ["easeType"] = "none",
+        },
+    },
+}
